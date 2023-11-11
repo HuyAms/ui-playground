@@ -94,6 +94,24 @@ export default function AnimationPage() {
                     </div>
                 </div>
             </section>
+            <section>
+                <H2>Translated card - Transition</H2>
+                <Paragraph>No doom flicker</Paragraph>
+                <div className='bg-red-100 flex justify-center items-center h-[300px] gap-4'>  
+                    <div className='group'>
+                        <div className='w-[200px] h-[200px] rounded bg-white group-hover:-translate-y-[16px] transition-transform ease-linear duration-200'></div>
+                    </div>
+                    <div className='group'>
+                        <div className='w-[200px] h-[200px] rounded bg-white group-hover:-translate-y-[16px] transition-transform ease-linear duration-200'></div>
+                    </div>
+                    <div className='group'>
+                        <div className='w-[200px] h-[200px] rounded bg-white group-hover:-translate-y-[16px] transition-transform ease-linear duration-200'></div>
+                    </div>
+                    <div className='group'>
+                        <div className='w-[200px] h-[200px] rounded bg-white group-hover:-translate-y-[16px] transition-transform ease-linear duration-200'></div>
+                    </div>
+                </div>
+            </section>
         </Container>
     )
 }
