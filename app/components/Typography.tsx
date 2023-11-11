@@ -18,6 +18,7 @@ export const sizes = {
 type TypographyProps = {
     as?: React.ElementType
     children?: React.ReactNode
+    className?: string
 }
 
 const sizeToTag: Record<Size, React.ElementType> = {

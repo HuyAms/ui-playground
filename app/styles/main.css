@@ -1,0 +1,12 @@
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(100px)
+    }
+    to {
+        transform: rotate(360deg) translateX(100px)
+    }
+}
+
+.moon {
+    animation: orbit 6000ms linear infinite
+}
