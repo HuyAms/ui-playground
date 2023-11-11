@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from "~/components/Container";
-import { H2, Paragraph } from "~/components/Typography";
+import { H2, H3, Paragraph } from "~/components/Typography";
 
 const intialValues = {
     translateX: 0,
@@ -130,6 +130,22 @@ export default function AnimationPage() {
                    <div className='group overflow-hidden'>
                     <img className='group-hover:scale-125 ease-linear duration-500' src="https://placehold.co/600x400" alt="" />
                    </div>
+                </div>
+            </section>
+            <section>
+                <H2>Keyframe animations</H2>
+                <Paragraph>Refersh the page to see the animation</Paragraph>
+                <div className='mb-6'>
+                    <H3>Slide-in</H3>
+                    <div className='bg-red-950/50 slide-in h-[100px] w-[100px]'></div>
+                </div>
+                <div className='mb-6'>
+                    <H3>Drop-in</H3>
+                    <div className='bg-red-950/50 drop-in h-[100px] w-[100px]'></div>
+                </div>
+                <div className='mb-6'>
+                    <H3>Grow and shrink</H3>
+                    <div className='bg-red-950/50 grow-and-shrink h-[100px] w-[100px]'></div>
                 </div>
             </section>
         </Container>
