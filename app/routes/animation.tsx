@@ -112,6 +112,26 @@ export default function AnimationPage() {
                     </div>
                 </div>
             </section>
+            <section>
+                <H2>Photo zoom</H2>
+                <div className='bg-red-100 grid grid-cols-3 gap-4'>  
+                   <div className='group overflow-hidden'>
+                    <img className='group-hover:scale-125 ease-linear duration-500' src="https://placehold.co/600x400" alt="" />
+                   </div>
+                   <div className='group overflow-hidden'>
+                    <img className='group-hover:scale-125 ease-linear duration-500' src="https://placehold.co/600x400" alt="" />
+                   </div>
+                   <div className='group overflow-hidden'>
+                    <img className='group-hover:scale-125 ease-linear duration-500' src="https://placehold.co/600x400" alt="" />
+                   </div>
+                   <div className='group overflow-hidden'>
+                    <img className='group-hover:scale-125 ease-linear duration-500' src="https://placehold.co/600x400" alt="" />
+                   </div>
+                   <div className='group overflow-hidden'>
+                    <img className='group-hover:scale-125 ease-linear duration-500' src="https://placehold.co/600x400" alt="" />
+                   </div>
+                </div>
+            </section>
         </Container>
     )
 }
