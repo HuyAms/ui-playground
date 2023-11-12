@@ -21,7 +21,7 @@
 }
 
 .slide-in {
-    animation: slide-in 1000ms ease-out;
+    animation: slide-in 1000ms ease-out backwards;
 }
 
 @keyframes drop-in {
@@ -36,7 +36,7 @@
 }
 
 .drop-in {
-    animation: drop-in 1000ms ease-out;
+    animation: drop-in 1000ms ease-out backwards;
 }
 
 @keyframes grow-and-shrink {

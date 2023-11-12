@@ -80,3 +80,14 @@ We'll cover
 - timing functinos: `animatin-timing-function`: linear, ease, etc
 - looped animatinos: `animation-iteration-count`, `infinite`
 - alternate animations: `animate-direction: alternate`
+- fill modes: the animation works fine, but when it's over, the element pops back into existence.
+    - `animation-fill-mode: forwards`: lets us persist the final value from the animation
+    - `animation-fill-mode: backwards`: lets us persist the initial value from the animation
+    - `animation-fill-mode: both`: apply both forwars and backwards
+- `animation-play-state`: running | paused
+
+## Animatinos vs transitions
+There are some things that only `@keyfames` can do
+- Looped animatinos
+- Multi-step animations
+- Pausable animations
