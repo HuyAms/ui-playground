@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from "~/components/Container";
 import { HelpCircle } from '~/components/HelpCircle';
+import { ModalScreen } from '~/components/Modal';
 import { H2, H3, Paragraph } from "~/components/Typography";
 
 const intialValues = {
@@ -155,6 +156,10 @@ export default function AnimationPage() {
             <section>
                   <H3>Wave hand</H3>
                   <span className="wave">👋</span>
+            </section>
+            <section>
+                  <H2>Modal</H2>
+                  <ModalScreen/>
             </section>
         </Container>
     )
