@@ -52,3 +52,18 @@
 .grow-and-shrink {
     animation: grow-and-shrink 4000ms ease-in-out alternate infinite;
 }
+
+@keyframes slide-up {
+    from {
+        transform: translateY(calc(100% + 32px));
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slide-up 500ms backwards;
+    animation-delay: 1000ms;
+}

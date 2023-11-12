@@ -91,3 +91,5 @@ There are some things that only `@keyfames` can do
 - Looped animatinos
 - Multi-step animations
 - Pausable animations
+
+If an animation needs to run immediately when the page loads or the component mounts, it's easiest to use `@keyframes`

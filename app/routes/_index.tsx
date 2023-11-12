@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container } from "~/components/Container";
+import { HelpCircle } from '~/components/HelpCircle';
 import { H2, H3, Paragraph } from "~/components/Typography";
 
 const intialValues = {
@@ -147,6 +148,9 @@ export default function AnimationPage() {
                     <H3>Grow and shrink</H3>
                     <div className='bg-red-950/50 grow-and-shrink h-[100px] w-[100px]'></div>
                 </div>
+            </section>
+            <section>
+                    <HelpCircle/>
             </section>
         </Container>
     )

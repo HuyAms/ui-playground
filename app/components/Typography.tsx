@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 type Size = "heading-1" | "heading-2" | "heading-3"| "heading-4"| "heading-5"| "heading-6" | "body-default"
 
 export const sizes = {
@@ -31,12 +33,12 @@ const sizeToTag: Record<Size, React.ElementType> = {
     "body-default": "p",
 }
 
-export function Typography({as, size, children}: TypographyProps & {size: Size}) {
+export function Typography({as, size, children, className}: TypographyProps & {size: Size}) {
 
     const Tag = as ?? sizeToTag[size]
 
     return (
-        <Tag className={sizes[size]}>{children}</Tag>
+        <Tag className={clsx(sizes[size], className)}>{children}</Tag>
     )
 }
 
