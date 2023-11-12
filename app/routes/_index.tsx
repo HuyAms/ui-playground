@@ -67,7 +67,7 @@ export default function AnimationPage() {
                             <div className="mb-4">
                                 <Paragraph className="mb-3">rotate: {rotate}deg</Paragraph>
                                 <div className="flex items-center gap-4">
-                                    <label htmlFor="rotate">scale</label>
+                                    <label htmlFor="rotate">rotate</label>
                                     <input id="rotate" value={rotate} onChange={(e) => setRotate(Number(e.target.value))} type="range" min="-360" max="360" />
                                 </div>
                             </div>
@@ -151,6 +151,10 @@ export default function AnimationPage() {
             </section>
             <section>
                     <HelpCircle/>
+            </section>
+            <section>
+                  <H3>Wave hand</H3>
+                  <span className="wave">👋</span>
             </section>
         </Container>
     )
