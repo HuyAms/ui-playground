@@ -93,3 +93,8 @@ There are some things that only `@keyfames` can do
 - Pausable animations
 
 If an animation needs to run immediately when the page loads or the component mounts, it's easiest to use `@keyframes`
+
+## Framer motion
+- [Thinking in springs](https://www.joshwcomeau.com/animation/a-friendly-introduction-to-spring-physics/)
+    - **stiffness:** tension, how tighly-wound the spring is
+    - **damping:** friction - a characteristic of the universe the spring exits within

@@ -2,7 +2,9 @@ import React from 'react'
 import { Container } from "~/components/Container";
 import { HelpCircle } from '~/components/HelpCircle';
 import { ModalScreen } from '~/components/Modal';
+import { ToggleBall } from '~/components/ToggleBall';
 import { H2, H3, Paragraph } from "~/components/Typography";
+import {motion} from 'framer-motion'
 
 const intialValues = {
     translateX: 0,
@@ -134,7 +136,7 @@ export default function AnimationPage() {
                    </div>
                 </div>
             </section>
-            <section>
+            <section className='mb-6'>
                 <H2>Keyframe animations</H2>
                 <Paragraph>Refersh the page to see the animation</Paragraph>
                 <div className='mb-6'>
@@ -149,17 +151,47 @@ export default function AnimationPage() {
                     <H3>Grow and shrink</H3>
                     <div className='bg-red-950/50 grow-and-shrink h-[100px] w-[100px]'></div>
                 </div>
-            </section>
-            <section>
-                    <HelpCircle/>
-            </section>
-            <section>
+                <div className='mb-6'>
+                 <HelpCircle/>
+                </div>
+                <div className='mb-6'>
                   <H3>Wave hand</H3>
                   <span className="wave">👋</span>
+                </div>
+                <div>
+                  <H3>Modal</H3>
+                  <ModalScreen/>
+                </div>
             </section>
             <section>
-                  <H2>Modal</H2>
-                  <ModalScreen/>
+                <H2>Frammer motion</H2>
+                <div>
+                  <ToggleBall/>
+                </div>
+                <div>
+                  <H3>While in view animation</H3>
+                  <motion.div 
+                    transition={{
+                      type: 'spring',
+                      stiffness: '200',
+                      damping: '50'
+                    }}   
+                    whileInView={{ x: 100 }}
+                    // viewport={{ once: true }}
+                  className='bg-red-950/50 h-[100px] w-[100px]'/>
+                </div>
+                <div>
+                  <H3>Variant</H3>
+                  <motion.div 
+                    transition={{
+                      type: 'spring',
+                      stiffness: '200',
+                      damping: '50'
+                    }}   
+                    whileInView={{ x: 100 }}
+                    // viewport={{ once: true }}
+                  className='bg-red-950/50 h-[100px] w-[100px]'/>
+                </div>
             </section>
         </Container>
     )

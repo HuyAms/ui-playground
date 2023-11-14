@@ -80,7 +80,7 @@ function Modal({title, handleDismiss, children, isOpen}: Props) {
 
 export function ModalScreen() {
 
-    const [isOpen, setIsOpen] = React.useState(true)
+    const [isOpen, setIsOpen] = React.useState(false)
 
 
     React.useEffect(() => {
