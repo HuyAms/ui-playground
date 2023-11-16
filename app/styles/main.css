@@ -83,3 +83,7 @@
     transform-origin: 75% 80%;
     display: inline-block;
 }
+
+.body {
+    background: red
+}
